@@ -1,3 +1,5 @@
+export const linkBackend = 'http://localhost:3001';
+
 export const initialProfile = {
   name: 'Messi',
   about: 'Football Player',

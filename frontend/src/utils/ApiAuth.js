@@ -1,3 +1,5 @@
+import { linkBackend } from './constants'
+
 class ApiAuth {
   constructor({ baseUrl }) {
     this._baseUrl = baseUrl
@@ -67,5 +69,5 @@ class ApiAuth {
 }
 
 export const apiAuth = new ApiAuth({
-  baseUrl: 'https://auth.nomoreparties.co',
+  baseUrl: linkBackend,
 })

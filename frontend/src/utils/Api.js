@@ -1,3 +1,5 @@
+import { linkBackend } from './constants';
+
 class Api {
   constructor(options) {
     this._baseUrl = options.baseUrl
@@ -89,7 +91,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-26',
+  baseUrl: linkBackend,
   headers: {
     authorization: 'ef9c4dff-4cef-417b-a4dd-85f6d4ba3fef',
     'Content-Type': 'application/json',
