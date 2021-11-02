@@ -191,10 +191,11 @@ function App() {
         email,
       })
       .then((res) => {
-        if (res.token) {
-          localStorage.setItem('token', res.token)
-          checkToken(res.token)
-        }
+        console.log('res в логине на фронте', res);
+        // if (res.token) {
+        //   localStorage.setItem('token', res.token)
+        //   checkToken(res.token)
+        // }
       })
       .catch((err) => {
         setIsErrorToolTip(true)

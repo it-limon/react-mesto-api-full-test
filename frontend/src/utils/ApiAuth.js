@@ -34,6 +34,7 @@ class ApiAuth {
   login(dataAuth) {
     return fetch(`${this._baseUrl}/signin`, {
       method: 'POST',
+      // credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
