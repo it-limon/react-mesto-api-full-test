@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
   const allowedCors = [
     'https://praktikum.tk',
     'http://praktikum.tk',
-    'localhost:3000',
+    'http://localhost:3000',
     'http://mesto-georgy.nomoredomains.work',
   ];
   // Значение для заголовка Access-Control-Allow-Methods по умолчанию (разрешены все типы запросов)

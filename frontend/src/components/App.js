@@ -178,7 +178,8 @@ function App() {
       })
       .catch((err) => {
         setIsErrorToolTip(true)
-        setToolTipMessage(err)
+        // setToolTipMessage(err) // TODO
+        console.log('catch на фронте в register', err)
       })
   }
 
@@ -197,7 +198,8 @@ function App() {
       })
       .catch((err) => {
         setIsErrorToolTip(true)
-        setToolTipMessage(err)
+        // setToolTipMessage(err) // TODO
+        console.log('catch на фронте в логине', err)
       })
   }
 
